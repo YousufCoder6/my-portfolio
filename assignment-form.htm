@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Muhammad Yousuf</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 30px;
+        }
+        .form-box {
+            max-width: 500px;
+            background: #ffffff;
+            margin: 0 auto;
+            padding: 25px 30px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        h4 {
+            text-align: center;
+            color: #666;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        .field-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #b0b0b0;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        textarea {
+            height: 90px;
+            resize: vertical;
+        }
+        .radio-options {
+            margin-top: 5px;
+        }
+        .radio-options label {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 20px;
+        }
+        .submit-btn {
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .submit-btn:hover {
+            background-color: #1a252f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-box">
+        <h2>Student Registration Form</h2>
+        <h4>Muhammad Yousuf - Saylani Mass IT Training</h4>
+
+        <form action="#" method="POST">
+            
+            <!-- Name Field -->
+            <div class="field-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="field-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Gender Field -->
+            <div class="field-group">
+                <label>Gender:</label>
+                <div class="radio-options">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <!-- Select Course Dropdown (exact match from reference image) -->
+            <div class="field-group">
+                <label for="course">Select a Course:</label>
+                <select id="course" name="course">
+                    <option value="" disabled selected>Select a Course</option>
+                    <option value="web">Web Development</option>
+                    <option value="graphic">Graphic Design</option>
+                    <option value="marketing">Digital Marketing</option>
+                    <option value="python">Python</option>
+                </select>
+            </div>
+
+            <!-- Phone / Fax Field -->
+            <div class="field-group">
+                <label for="phone">Phone / Mobile:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+            </div>
+
+            <!-- Address Field -->
+            <div class="field-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" placeholder="Enter your address..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
